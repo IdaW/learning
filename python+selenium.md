@@ -15,9 +15,21 @@ https://sites.google.com/a/chromium.org/chromedriver/downloads  
 
 ## Unittest
 创建Python Unittest  
-case名以test打头或结尾  
+case名以test打头  
 import unittest，selenium.webdriver模块  
-class继承unittest.TestCase  
+class继承unittest.TestCase   
+最后结尾处的unittest.main(),添加这个是支持在cmd里面，cd到这个脚本文件所在的目录，然后Python 脚本名.py执行，如果不添加这一段，是无法执行cmd里面运行脚本的    
+### 测试固件（test fixture）   
+setUp()和tearDown()    
+
+### 测试用例（test case）     
+unittest中管理的最小单元是测试用例，一个测试用例，包括测试固件，和具体测试业务的函数或者方法。   
+
+### 测试套件 （test suite）     
+就是很多测试用例的集合    
+
+### 测试执行器 （test runner）     
+用来执行加载测试用例，并执行用例，且提供测试输出的一个组建。    
 
 ### 基本概念  
 元素  
